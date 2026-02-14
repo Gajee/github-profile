@@ -7,7 +7,7 @@ interface Props {
 }
 
 const GithubContributionGrid = ({ username }: Props) => {
-  const [yearData, setYearData] = useState<Record<number, any[]>>({});
+//   const [yearData, setYearData] = useState<Record<number, any[]>>({});
 //   const [selectedYear, setSelectedYear] = useState<number>(
 //     new Date().getFullYear()
 //   );
@@ -75,7 +75,7 @@ const GithubContributionGrid = ({ username }: Props) => {
     const filtered = allContributions.filter((d) =>
     d.date.startsWith(String(selectedYear))
     );
-  const currentYearData = yearData[selectedYear] || [];
+//   const currentYearData = yearData[selectedYear] || [];
 
   const contributionMap: Record<string, number> = {};
     filtered.forEach((d) => {
@@ -136,7 +136,7 @@ const GithubContributionGrid = ({ username }: Props) => {
 //     )
 //     .sort((a, b) => b - a);
 
-const currentYear = new Date().getFullYear();
+// const currentYear = new Date().getFullYear();
 
 // const years = Array.from(
 //   { length: currentYear - 2015 },
