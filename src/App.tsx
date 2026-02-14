@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Tabs from "./components/Tabs";
 import RepoCard from "./components/RepoCard";
-import ContributionGraph from "./components/ContributionGraph";
+// import ContributionGraph from "./components/ContributionGraph";
 import { getRepos } from "./api/github";
 import GithubContributionGrid from "./components/GithubContributionGrid";
 
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header username={username}/>
 
       <div className="max-w-6xl mx-auto px-6 mt-8 flex flex-col md:flex-row gap-10">
         <Sidebar username={username} />
